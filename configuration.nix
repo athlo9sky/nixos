@@ -3,6 +3,7 @@
 {
   imports =
     [
+      ./applications/settings/firefox.nix
       ./applications/settings/git.nix
       ./applications/kde-packages.nix
       ./applications/system-packages.nix

@@ -4,7 +4,6 @@
   home-manager.users.athlo9sky = {
     home = {
       packages = with pkgs; [
-        firefox
         tree
       ];
     };
