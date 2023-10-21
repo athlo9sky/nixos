@@ -4,6 +4,8 @@
   imports =
     [
       ./applications/settings/git.nix
+      ./applications/systemapps.nix
+      #./applications/userapps.nix
       
       ./system/hardware/hardware-configuration.nix
       ./system/hardware/network.nix
@@ -20,23 +22,6 @@
      font = "Lat2-Terminus16";
      useXkbConfig = true;
    };
-
-   nixpkgs.config.allowUnfree = true;
-
-   users.users.athlo9sky = {
-     isNormalUser = true;
-     extraGroups = [ "wheel" ];
-     packages = with pkgs; [
-       firefox
-       tree
-     ];
-     password = "V9upSSqfAE9X7ck";
-   };
-
-   environment.systemPackages = with pkgs; [
-     vim 
-     wget
-   ];
 
   system.stateVersion = "23.05";
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
