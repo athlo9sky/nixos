@@ -32,6 +32,14 @@
       ./system/user.nix
     ];
 
+  nix = {
+    settings = {
+      substituters = [
+        "https://cache.nixos.org/"
+      ];
+    };
+  };
+
   system.stateVersion = "23.05";
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 }
