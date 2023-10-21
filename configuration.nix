@@ -13,6 +13,8 @@
 
       ./system/software/boot.nix
       ./system/software/xserver.nix
+
+      ./system/user.nix
     ];
 
    time.timeZone = "Europe/Minsk";
