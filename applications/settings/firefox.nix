@@ -1,4 +1,5 @@
 { pkgs, ... }:
+
 {
   home-manager.users.athlo9sky.programs.firefox = {
     enable = true;

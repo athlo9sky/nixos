@@ -19,6 +19,11 @@
           accelSpeed = "0";
         };
       };
+
+    displayManager.setupCommands = ''
+    ${pkgs.xorg.xrandr}/bin/xrandr -d :0 --output eDP-1 --set "scaling mode" "Full"
+    '';
+
     };
   };
 }
