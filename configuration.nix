@@ -10,7 +10,7 @@
       
       ./system/hardware/hardware-configuration.nix
       ./system/hardware/network.nix
-      ./system/hardware/sound.nix
+      ./system/hardware/audio.nix
       
       ./system/software/hmanager/home-manager.nix
       ./system/software/kde/kde-settings.nix
@@ -21,6 +21,5 @@
 
   system.stateVersion = "23.05";
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
 }
 
