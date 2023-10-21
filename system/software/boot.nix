@@ -1,4 +1,4 @@
-{ ... }:
+{ config, ... }:
 
 {
   boot = {
@@ -12,8 +12,8 @@
     plymouth.enable = true;
     initrd.systemd.enable = true;
 
-    # blacklistedKernelModules = [ "rtw88_8822ce" ];
-    # extraModulePackages = with config.boot.kernelPackages; [ rtl8821au ];
+    blacklistedKernelModules = [ "rtw88_8822ce" ];
+    extraModulePackages = with config.boot.kernelPackages; [ rtl8821au ];
     initrd.kernelModules = [ "amdgpu" ];
   };
 }

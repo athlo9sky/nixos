@@ -8,8 +8,7 @@
         discord-canary
         discord-gamesdk
         discord-rpc
-        discord-ptb
-        keepassxc
+        bottles
         tree
       ];
     };
