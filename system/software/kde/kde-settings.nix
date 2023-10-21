@@ -17,7 +17,7 @@
     imports = [ inputs.plasma-manager.homeManagerModules.plasma-manager ];
     programs.plasma = {
       enable = true;
-      files = {
+      configFile = {
         dolphinrc = {
           General = {
             GlobalViewProps = false;
