@@ -10,6 +10,14 @@
       xkbOptions = "grp:alt_shift_toggle";
       libinput = {
         enable = true;
+        touchpad = {
+          tappingDragLock = false;
+          naturalScrolling = true;
+        };
+        mouse = {
+          accelProfile = "flat";
+          accelSpeed = "0";
+        };
       };
     };
   };

@@ -4,26 +4,20 @@
   imports =
     [
       ./applications/settings/git.nix
-      ./applications/systemapps.nix
-      #./applications/userapps.nix
+      ./applications/kde-packages.nix
+      ./applications/system-packages.nix
+      ./applications/user-packages.nix
       
       ./system/hardware/hardware-configuration.nix
       ./system/hardware/network.nix
       ./system/hardware/sound.nix
-
+      
+      ./system/software/hmanager/home-manager.nix
+      ./system/software/kde/kde-settings.nix
       ./system/software/boot.nix
       ./system/software/xserver.nix
-
       ./system/user.nix
     ];
-
-   time.timeZone = "Europe/Minsk";
-
-   i18n.defaultLocale = "en_US.UTF-8";
-   console = {
-     font = "Lat2-Terminus16";
-     useXkbConfig = true;
-   };
 
   system.stateVersion = "23.05";
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
