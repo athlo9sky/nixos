@@ -6,5 +6,7 @@
     vim 
     wget
     keepassxc
+    tree
+    dua
   ];
 }
