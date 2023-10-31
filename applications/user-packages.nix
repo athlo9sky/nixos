@@ -13,6 +13,7 @@
         discord-rpc
         bottles
         spotify
+        vlc
       ];
     };
   };
