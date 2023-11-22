@@ -5,12 +5,14 @@
     home = {
       packages = with pkgs; [
         telegram-desktop
-        element-desktop
-        prismlauncher
+        github-desktop
+      # element-desktop
+      # prismlauncher
         obs-studio
-        discord-canary
-        discord-gamesdk
-        discord-rpc
+        discord
+      # discord-canary
+      # discord-gamesdk
+      # discord-rpc
         bottles
         spotify
         vlc
