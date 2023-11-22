@@ -14,6 +14,7 @@
       ./applications/kde-packages.nix
       ./applications/system-packages.nix
       ./applications/user-packages.nix
+      ./applications/settings/direnv.nix
       
       ./system/hardware/hardware-configuration.nix
       ./system/hardware/network.nix
