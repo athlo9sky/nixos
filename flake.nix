@@ -50,5 +50,12 @@
           };
         };
       };
+      devShells.x86_64-linux = with nixpkgs.lib;
+        let
+          inherit ((builtins.head (builtins.attrValues self.nixosConfigurations))) pkgs config;
+          mkShells = mapAttrs
+            (_name: value: import value { inherit pkgs config; });
+        in
+        mkShells (builtins.listToAttrs (findModules ./devshell));
     };
 }
