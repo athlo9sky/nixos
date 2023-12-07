@@ -6,6 +6,8 @@
       packages = with pkgs; [
         telegram-desktop
         github-desktop
+        gitkraken
+        lens
       # element-desktop
       # prismlauncher
         obs-studio
