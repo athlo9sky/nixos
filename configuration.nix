@@ -30,6 +30,8 @@
       ./system/software/opengl.nix
       ./system/software/virtualisation.nix
 
+      ./system/services/wireguard/wireguard.nix
+
       ./system/user.nix
     ];
 

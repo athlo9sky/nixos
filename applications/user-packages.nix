@@ -9,9 +9,11 @@
         lens
         wireshark
         winbox #MikroTik
+        ciscoPacketTracer8
       # element-desktop
       # prismlauncher
         obs-studio
+        arp-scan
         discord
       # discord-canary
       # discord-gamesdk
