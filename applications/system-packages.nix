@@ -8,5 +8,7 @@
     keepassxc
     tree
     dua
+    gtk3
+    gtk2
   ];
 }
