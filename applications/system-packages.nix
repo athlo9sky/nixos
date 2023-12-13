@@ -10,5 +10,6 @@
     dua
     gtk3
     gtk2
+    gtk3-x11
   ];
 }
